@@ -14,16 +14,253 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      announcements: {
+        Row: {
+          body: string
+          category: string
+          contact_faculty_id: string | null
+          created_at: string
+          created_by: string | null
+          event_date: string | null
+          id: string
+          title: string
+          venue: string
+        }
+        Insert: {
+          body?: string
+          category?: string
+          contact_faculty_id?: string | null
+          created_at?: string
+          created_by?: string | null
+          event_date?: string | null
+          id?: string
+          title: string
+          venue?: string
+        }
+        Update: {
+          body?: string
+          category?: string
+          contact_faculty_id?: string | null
+          created_at?: string
+          created_by?: string | null
+          event_date?: string | null
+          id?: string
+          title?: string
+          venue?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "announcements_contact_faculty_id_fkey"
+            columns: ["contact_faculty_id"]
+            isOneToOne: false
+            referencedRelation: "faculty"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      attendance_records: {
+        Row: {
+          class_date: string
+          created_at: string
+          id: string
+          present: boolean
+          student_id: string
+          subject: string
+        }
+        Insert: {
+          class_date?: string
+          created_at?: string
+          id?: string
+          present?: boolean
+          student_id: string
+          subject: string
+        }
+        Update: {
+          class_date?: string
+          created_at?: string
+          id?: string
+          present?: boolean
+          student_id?: string
+          subject?: string
+        }
+        Relationships: []
+      }
+      batches: {
+        Row: {
+          created_at: string
+          department: string
+          id: string
+          label: string
+          number: number
+        }
+        Insert: {
+          created_at?: string
+          department: string
+          id?: string
+          label: string
+          number: number
+        }
+        Update: {
+          created_at?: string
+          department?: string
+          id?: string
+          label?: string
+          number?: number
+        }
+        Relationships: []
+      }
+      faculty: {
+        Row: {
+          department: string
+          id: string
+          name: string
+          room: string
+          status: string
+          status_note: string
+          subject: string
+          updated_at: string
+          user_id: string | null
+        }
+        Insert: {
+          department?: string
+          id?: string
+          name: string
+          room?: string
+          status?: string
+          status_note?: string
+          subject?: string
+          updated_at?: string
+          user_id?: string | null
+        }
+        Update: {
+          department?: string
+          id?: string
+          name?: string
+          room?: string
+          status?: string
+          status_note?: string
+          subject?: string
+          updated_at?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      lectures: {
+        Row: {
+          batch_id: string
+          created_at: string
+          day_of_week: number
+          end_time: string
+          faculty_id: string | null
+          id: string
+          room: string
+          start_time: string
+          subject: string
+        }
+        Insert: {
+          batch_id: string
+          created_at?: string
+          day_of_week: number
+          end_time: string
+          faculty_id?: string | null
+          id?: string
+          room?: string
+          start_time: string
+          subject: string
+        }
+        Update: {
+          batch_id?: string
+          created_at?: string
+          day_of_week?: number
+          end_time?: string
+          faculty_id?: string | null
+          id?: string
+          room?: string
+          start_time?: string
+          subject?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "lectures_batch_id_fkey"
+            columns: ["batch_id"]
+            isOneToOne: false
+            referencedRelation: "batches"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "lectures_faculty_id_fkey"
+            columns: ["faculty_id"]
+            isOneToOne: false
+            referencedRelation: "faculty"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          batch_id: string | null
+          created_at: string
+          email: string | null
+          full_name: string
+          id: string
+        }
+        Insert: {
+          batch_id?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string
+          id: string
+        }
+        Update: {
+          batch_id?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string
+          id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "profiles_batch_id_fkey"
+            columns: ["batch_id"]
+            isOneToOne: false
+            referencedRelation: "batches"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "student" | "faculty" | "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +387,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["student", "faculty", "admin"],
+    },
   },
 } as const
