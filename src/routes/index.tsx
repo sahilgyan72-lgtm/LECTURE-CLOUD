@@ -55,7 +55,10 @@ function Index() {
   const batch = useMemo(() => {
     const list = batches.data ?? [];
     return (
-      list.find((b) => b.label.toLowerCase() === batchLabel.trim().toLowerCase()) ?? list[0] ?? null
+      list.find((b) => b.label.toLowerCase() === batchLabel.trim().toLowerCase()) ??
+      list.find((b) => b.label === "Civil Batch 3") ??
+      list[0] ??
+      null
     );
   }, [batches.data, batchLabel]);
 
