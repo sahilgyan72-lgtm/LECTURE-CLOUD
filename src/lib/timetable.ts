@@ -88,7 +88,8 @@ export function lecturesForBatch(batch: string): Lecture[] {
       for (const raw of cell) {
         const [subject, faculty, room, batches] = raw.split("|");
         if (batches && !batches.split(",").includes(batch)) continue;
-        out.push({ day: d + 1, slot: s, ...SLOTS[s], subject: subject ?? "", faculty: faculty ?? "", room: room || DIVISION_ROOM[div] });
+        const t = SLOTS[s]!;
+        out.push({ day: d + 1, slot: s, start: t.start, end: t.end, subject: subject ?? "", faculty: faculty ?? "", room: room || DIVISION_ROOM[div] });
       }
     }),
   );
