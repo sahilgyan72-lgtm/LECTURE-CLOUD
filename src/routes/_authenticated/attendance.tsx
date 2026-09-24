@@ -45,7 +45,12 @@ function AttendancePage() {
   const batches = useQuery({ queryKey: ["batches"], queryFn: fetchBatches });
   const batch = useMemo(() => {
     const list = batches.data ?? [];
-    return list.find((b) => b.label === batchLabel) ?? list[0] ?? null;
+    return (
+      list.find((b) => b.label === batchLabel) ??
+      list.find((b) => b.label === "Civil Batch 3") ??
+      list[0] ??
+      null
+    );
   }, [batches.data, batchLabel]);
 
   const lectures = useQuery({
