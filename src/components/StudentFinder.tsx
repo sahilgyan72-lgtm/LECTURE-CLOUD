@@ -13,7 +13,10 @@ export function StudentFinder({ onFound }: { onFound: (s: SavedStudent) => void 
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!roll.trim()) return toast.error("Enter your roll number");
+    if (!roll.trim()) {
+      toast.error("Enter your roll number");
+      return;
+    }
     setBusy(true);
     try {
       const s = await find({ data: { batch, roll } });
