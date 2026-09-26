@@ -1305,277 +1305,277 @@ export const STUDENTS: Student[] = [
 {
 "roll": "ME79",
 "name": "Mayurkumar Dilipbhai Parmar",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME80",
 "name": "Kushkumar Mukeshbhai Ukavala",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME81",
 "name": "Swarit Anilkumar Patel",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME27",
 "name": "Dhruv Ranjitkumar Sahay",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME28",
 "name": "Krish Manishkumar Patel",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME31",
 "name": "Manan Dhanjay Paramar",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME32",
 "name": "Jainil Jayeshkumar Patel",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME33",
 "name": "Pratyush Bhaveshbhai Dudharejiya",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME34",
 "name": "Mitesh Bhamraji Purohit",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME35",
 "name": "Man Dhirendrabhai Vanjara",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME36",
 "name": "Bharati Abhi Munnakumar",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME37",
 "name": "Visani Krish Alpeshbhai",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME38",
 "name": "Prit Hareshbhai Kanpreeya",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME39",
 "name": "Krish Mulabhai Chaudhari",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME43",
 "name": "Dhruvi Lakhubhai Patel",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME44",
 "name": "Vishw Dharmendrakumar Patel",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME46",
 "name": "Yuvrajsinh Pruthvisinh Zala",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME47",
 "name": "Aman Saji",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME82",
 "name": "Ranveer Rajubhai Garashiya",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME83",
 "name": "Chaudhary Parth Govindbhai",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME84",
 "name": "Shaurya Soni",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME85",
 "name": "Akshansh Raj Singh Sisodiya",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME86",
 "name": "Marmikkumar Kalpeshbhai Bhatt",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME87",
 "name": "Marmikkumar Kalpeshbhai Bhatt",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME88",
 "name": "Deepak Kumar Mahto",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME89",
 "name": "Vanshraj Jitendrasinh Chauhan",
-"batch": "M1",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME51",
 "name": "Chavda Digvijaysinh Rameshbhai",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME52",
 "name": "Prajapati Jainil Jagdishbhai",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME53",
 "name": "Prajapati Parth Rajeshbhai",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME55",
 "name": "Rohit Pankaj Kushwaha",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME56",
 "name": "Jatan Anilkumar Bhavsar",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME57",
 "name": "Rahul Pankaj Kushwaha",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME58",
 "name": "Dakshbhai Bholabhai Chodvadiya",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME60",
 "name": "Pruthviraj Dineshbhai Chauhan",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME61",
 "name": "Abhishek Mahendrakumar Sargara",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME62",
 "name": "Mohmmadfurkan Maksudbhai Kureshi",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME64",
 "name": "Man Vinodbhai Patel",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME65",
 "name": "Heenaba Dalpatsinh Rajput",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME71",
 "name": "Tirthkumar Prakashbhai Patel",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME72",
 "name": "Dharmil Anilkumar Patel",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME73",
 "name": "Ram Hanjariji Joshi",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME74",
 "name": "Ayushkumar Mukeshkumar Kurmi",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME75",
 "name": "Kumbhasana Jayeshbhai Gulabbhai",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME76",
 "name": "Vishv Rajeshkumar Patel",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME77",
 "name": "Divya Kantibhai Malli",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {
 "roll": "ME78",
 "name": "Harshilkumar Rinkalkumar Patel",
-"batch": "M3",
+"batch": "M2",
 "dept": "Mechanical"
 },
 {

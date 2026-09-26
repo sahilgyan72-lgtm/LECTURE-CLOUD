@@ -66,7 +66,7 @@ function AttendancePage() {
     <PageShell>
       <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-4">
         <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-          Are you clearing <span className="chrome-text">75%</span>?
+          Are you clearing <span className="text-white">75%</span>?
         </h1>
         <p className="mt-3 max-w-md text-white/75">
           {student ? `${student.name} · ${student.batch}. ` : ""}Saved on this phone only.

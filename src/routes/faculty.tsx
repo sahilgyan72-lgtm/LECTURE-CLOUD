@@ -30,7 +30,7 @@ function FacultyPage() {
     <PageShell>
       <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-4">
         <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-          Who's <span className="chrome-text">free</span> right now.
+          Who's <span className="text-white">free</span> right now.
         </h1>
         <p className="mt-3 max-w-md text-white/75">
           {free} of {list.length} faculty members are available for a walk-in.

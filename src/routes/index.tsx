@@ -44,7 +44,7 @@ function Index() {
     <PageShell>
       <section className="relative z-10 mx-auto max-w-7xl px-6 pb-10 pt-6">
         <h1 className="text-5xl font-bold leading-[0.95] tracking-tight text-white md:text-6xl">
-          Your <span className="chrome-text">timetable</span>, by roll number.
+          Your <span className="text-white">timetable</span>, by roll number.
         </h1>
         <p className="mt-5 max-w-lg text-lg text-white/75">
           Pick your batch (like CP2), type your roll number (like 34), and see every lecture with the
