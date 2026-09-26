@@ -17,7 +17,7 @@ export function SiteHeader() {
           </div>
           <div className="leading-tight">
             <p className="text-lg font-bold tracking-tight text-white">
-              Lecture<span className="chrome-text">Cloud</span>
+              Lecture<span className="text-white">Cloud</span>
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/60">
               GEC Palanpur

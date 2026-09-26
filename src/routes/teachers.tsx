@@ -70,7 +70,7 @@ function TeachersPage() {
       <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-4">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-            Teachers' <span className="chrome-text">desk</span>
+            Teachers' <span className="text-white">desk</span>
           </h1>
           <button
             onClick={async () => {

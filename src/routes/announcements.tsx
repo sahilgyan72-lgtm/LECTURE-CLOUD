@@ -29,7 +29,7 @@ function AnnouncementsPage() {
     <PageShell>
       <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16 pt-4">
         <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-          What's <span className="chrome-text">happening</span> on campus.
+          What's <span className="text-white">happening</span> on campus.
         </h1>
         <p className="mt-3 max-w-md text-white/75">
           Each notice names the professor to meet for that activity.
