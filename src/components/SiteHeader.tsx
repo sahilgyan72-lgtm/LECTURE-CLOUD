@@ -24,16 +24,17 @@ export function SiteHeader() {
               GEC Palanpur
             </p>
           </div>
-          <span className="ml-1 hidden items-center gap-1.5 rounded-full bg-white/10 py-1 pl-1 pr-3 ring-1 ring-white/15 sm:flex">
+          <span className="ml-1 hidden items-center gap-2 rounded-full bg-white/10 py-1.5 pl-1.5 pr-4 ring-1 ring-white/15 sm:flex">
             <img
               src={madeByAsset.url}
               alt="Made by Error Follows team"
-              className="size-7 rounded-full object-cover object-top"
+              className="size-10 rounded-full object-cover object-top ring-1 ring-white/20"
             />
-            <span className="font-mono text-[10px] uppercase tracking-widest text-white/80">
+            <span className="font-mono text-[11px] uppercase tracking-widest text-white/90">
               Made by
             </span>
           </span>
+
         </Link>
 
         <nav className="hidden items-center gap-1 rounded-full bg-white/10 p-1 ring-1 ring-white/15 md:flex">
