@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import madeByAsset from "@/assets/error-follows.png.asset.json";
 
 const links = [
   { to: "/", label: "Timetable" },
