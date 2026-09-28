@@ -10,8 +10,8 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="relative z-10">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-5">
+    <header className="sticky top-0 z-30 border-b border-white/10 bg-duskdeep/60 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center gap-3">
           <div className="chrome grid size-10 place-items-center rounded-xl shadow-lg shadow-black/20">
             <span className="font-mono text-sm font-bold text-duskdeep">LC</span>
@@ -24,6 +24,16 @@ export function SiteHeader() {
               GEC Palanpur
             </p>
           </div>
+          <span className="ml-1 hidden items-center gap-1.5 rounded-full bg-white/10 py-1 pl-1 pr-3 ring-1 ring-white/15 sm:flex">
+            <img
+              src={madeByAsset.url}
+              alt="Made by Error Follows team"
+              className="size-7 rounded-full object-cover object-top"
+            />
+            <span className="font-mono text-[10px] uppercase tracking-widest text-white/80">
+              Made by
+            </span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 rounded-full bg-white/10 p-1 ring-1 ring-white/15 md:flex">
