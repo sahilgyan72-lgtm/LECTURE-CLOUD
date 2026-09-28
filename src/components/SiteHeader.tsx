@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import madeByAsset from "@/assets/error-follows.png.asset.json";
 
 const links = [
   { to: "/", label: "Timetable" },
@@ -10,7 +9,7 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-white/10 bg-duskdeep/60 backdrop-blur-md">
+    <header className="border-b border-white/10">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3">
         <Link to="/" className="flex items-center gap-3">
           <div className="chrome grid size-10 place-items-center rounded-xl shadow-lg shadow-black/20">
@@ -24,18 +23,8 @@ export function SiteHeader() {
               GEC Palanpur
             </p>
           </div>
-          <span className="ml-1 hidden items-center gap-2 rounded-full bg-white/10 py-1.5 pl-1.5 pr-4 ring-1 ring-white/15 sm:flex">
-            <img
-              src={madeByAsset.url}
-              alt="Made by Error Follows team"
-              className="size-10 rounded-full object-cover object-top ring-1 ring-white/20"
-            />
-            <span className="font-mono text-[11px] uppercase tracking-widest text-white/90">
-              Made by
-            </span>
-          </span>
-
         </Link>
+
 
         <nav className="hidden items-center gap-1 rounded-full bg-white/10 p-1 ring-1 ring-white/15 md:flex">
           {links.map((link) => (
