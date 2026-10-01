@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const links = [
   { to: "/", label: "Timetable" },
@@ -40,6 +41,8 @@ export function SiteHeader() {
           ))}
         </nav>
 
+        <div className="flex items-center gap-2">
+        <ThemeToggle />
         <Link
           to="/teachers"
           className="rounded-full px-3 py-1.5 font-mono text-[11px] uppercase tracking-widest text-white/80 ring-1 ring-white/25 hover:bg-white/10"
@@ -47,6 +50,7 @@ export function SiteHeader() {
         >
           Teachers
         </Link>
+        </div>
       </div>
       <nav className="mx-auto flex max-w-7xl gap-1 overflow-x-auto px-6 pb-2 md:hidden">
         {links.map((link) => (

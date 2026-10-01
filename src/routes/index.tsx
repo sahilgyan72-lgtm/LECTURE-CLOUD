@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { PageShell, Panel } from "@/components/PageShell";
+import { NowStrip } from "@/components/NowStrip";
 import { StudentFinder } from "@/components/StudentFinder";
 import { useStudent } from "@/hooks/useStudent";
 import { fetchFaculty, formatTime, minutesOfDay, statusDotClass, STATUS_LABELS } from "@/lib/campus";
@@ -74,6 +75,9 @@ function Index() {
 
       {student ? (
         <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16">
+          <div className="mb-6">
+            <NowStrip batch={student.batch} />
+          </div>
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <Panel
