@@ -39,7 +39,7 @@ export function Panel({
       className={
         dark
           ? "overflow-hidden rounded-3xl bg-duskdeep shadow-xl shadow-black/30 ring-1 ring-white/15"
-          : "overflow-hidden rounded-3xl bg-white/95 shadow-xl shadow-black/20 ring-1 ring-white/60"
+          : "panel-light overflow-hidden rounded-3xl bg-white/95 shadow-xl shadow-black/20 ring-1 ring-white/60"
       }
     >
       <div

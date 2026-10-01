@@ -154,3 +154,17 @@
     font-family: var(--font-display);
   }
 }
+
+/* Night mode — deeper sky, dark panels. Toggled via .night on <html>. */
+.night .horizon {
+  background: linear-gradient(180deg, #2a2350 0%, #1b1638 40%, #120e26 75%, #0b0918 100%);
+  background-attachment: fixed;
+}
+.night .panel-light {
+  --duskdeep: oklch(0.95 0.01 290);
+  background-color: oklch(0.22 0.05 295 / 0.95);
+  --tw-ring-color: oklch(1 0 0 / 0.12);
+}
+.night .panel-light .chrome {
+  --duskdeep: oklch(0.28 0.082 296.7);
+}
