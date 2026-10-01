@@ -30,13 +30,13 @@ export function NowStrip({ batch }: { batch: string }) {
       const found = all.find((l) => l.day === d);
       if (found) {
         next = found;
-        nextLabel = i === 1 ? "Tomorrow" : DAYS[d - 1];
+        nextLabel = i === 1 ? "Tomorrow" : (DAYS[d - 1] ?? "");
         break;
       }
     }
   }
 
-  const Cell = ({ label, l, note }: { label: string; l?: Lecture; note: string }) => (
+  const Cell = ({ label, l, note }: { label: string; l?: Lecture | undefined; note: string }) => (
     <div className="flex-1 px-5 py-4">
       <p className="font-mono text-[10px] uppercase tracking-widest text-duskdeep/60">{label}</p>
       {l ? (
