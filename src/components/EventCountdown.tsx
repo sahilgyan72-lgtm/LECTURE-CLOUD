@@ -85,9 +85,9 @@ export function EventCountdown() {
           <button
             aria-label="Dismiss countdown"
             onClick={() => {
-              setDismissed(event.id);
+              setDismissed(dismissKey);
               try {
-                localStorage.setItem(DISMISS_KEY, event.id);
+                localStorage.setItem(DISMISS_KEY, dismissKey);
               } catch {
                 /* ignore */
               }
