@@ -61,14 +61,14 @@ export function EventCountdown() {
   ];
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-40 w-[calc(100%-2rem)] max-w-md -translate-x-1/2 animate-enter">
-      <div className="rounded-3xl bg-white/95 p-5 shadow-2xl ring-1 ring-white/60 backdrop-blur">
+    <div className="fixed bottom-4 right-4 z-40 w-[calc(100%-2rem)] max-w-xs animate-enter">
+      <div className="rounded-2xl bg-white/95 p-4 shadow-2xl ring-1 ring-white/60 backdrop-blur">
         <div className="flex items-start justify-between gap-3">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-widest text-duskdeep/50">
               {event.category || "Upcoming"}
             </p>
-            <h2 className="mt-0.5 text-lg font-bold leading-tight text-duskdeep">
+            <h2 className="mt-0.5 text-base font-bold leading-tight text-duskdeep">
               {event.title}
             </h2>
             <p className="mt-0.5 text-xs text-duskdeep/60">
@@ -101,7 +101,7 @@ export function EventCountdown() {
               key={u.label}
               className="rounded-xl bg-duskdeep/5 py-2 text-center ring-1 ring-duskdeep/10"
             >
-              <div className="font-mono text-xl font-bold tabular-nums text-duskdeep">
+              <div className="font-mono text-base font-bold tabular-nums text-duskdeep">
                 {String(u.value).padStart(2, "0")}
               </div>
               <div className="font-mono text-[9px] uppercase tracking-widest text-duskdeep/50">
