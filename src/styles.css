@@ -168,3 +168,12 @@
 .night .panel-light .chrome {
   --duskdeep: oklch(0.28 0.082 296.7);
 }
+/* Native select dropdowns: keep options readable on dark panels. */
+.night .panel-light select {
+  background-color: oklch(1 0 0 / 0.08);
+  color: oklch(0.95 0.01 290);
+}
+.night .panel-light select option {
+  background-color: oklch(0.22 0.05 295);
+  color: oklch(0.95 0.01 290);
+}
